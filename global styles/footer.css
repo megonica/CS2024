@@ -1,0 +1,14 @@
+.footer-box{
+    background-color: lightgrey;
+    width: 100%;
+    height: 200px;
+}
+
+table {
+    width: 100%;
+}
+.btn-email {
+    text-align: center;
+    margin-top: 5px;
+    background-color: lightgray;
+}

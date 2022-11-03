@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lexend:wght@500&display=swap');
+
+button[name='book'] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+button[name='book']:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+}

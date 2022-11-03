@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lexend:wght@500&display=swap');
+
+.content p {
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  color: #aba49d;
+}
+
+.content h1,
+.content h2,
+.content h3 {
+  font-family: 'EB Garamond', sans-serif;
+}
+.content h1 {
+  font-size: 56px;
+  color: #746661;
+}
+
+.content h2 {
+  font-size: 34px;
+  color: #746661;
+}
+
+.content h3 {
+  font-size: 28px;
+  color: #aba49d;
+}

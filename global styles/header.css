@@ -1,22 +1,38 @@
-.header-box{
-    background-color: lightgrey;
-    height: 100px;
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lexend:wght@500&display=swap');
+
+img[alt='Logo'] {
+  width: 117px;
+  height: auto;
+  margin-right: 39px;
 }
+
 .navbar-nav > li {
-    padding-left:20px;
-    padding-right:20px;
-    margin-top: 10px;
+  padding-right: 20px;
+  font-family: 'Lexend', sans-serif;
 }
 
 .btn-appointment {
-    background-color: #A45ee5;
-    color: white;
-    transition-duration: 0.5s;
-    text-align: center;
-    margin-top: 25px;
-    margin-left: 25px;
-    --bs-btn-hover-color: var(--bs-black);
-    --bs-btn-hover-bg: var(--bs-blue);
+  all: unset;
+  background-color: #5200ff;
+  color: white;
+  font-family: 'Lexend', sans-serif;
+  padding: 8px;
+  margin-right: 48px;
+  width: 150px;
+  height: 24px;
+  text-align: center;
 }
 
+.btn-appointment:hover {
+  all: unset;
+  cursor: pointer;
+  background-color: #a47aff;
+  color: white;
+  transition-duration: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  padding: 8px;
+  margin-right: 48px;
+  width: 150px;
+  height: 24px;
+  text-align: center;
+}

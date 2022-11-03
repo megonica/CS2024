@@ -1,0 +1,4 @@
+.content {
+  min-height: calc(100vh - 443px);
+  /*browser's current height minus header's and footer's heights*/
+}

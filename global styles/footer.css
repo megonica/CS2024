@@ -1,14 +1,108 @@
-.footer-box{
-    background-color: lightgrey;
-    width: 100%;
-    height: 200px;
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lexend:wght@500&display=swap');
+
+footer {
+  background-color: #746661;
+  height: 300px;
+  font-family: 'Lexend', sans-serif;
 }
 
-table {
-    width: 100%;
+footer > section {
+  display: flex;
+  height: 252px;
+  font-size: 12px;
+  color: white;
+  padding-top: 60px;
 }
-.btn-email {
-    text-align: center;
-    margin-top: 5px;
-    background-color: lightgray;
+
+footer > div {
+  height: 48px;
+}
+
+footer h4 {
+  font-family: 'EB Garamond', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer > section img {
+  margin: 0 0 0 193px;
+}
+
+footer a {
+  all: unset;
+  display: inline;
+}
+
+footer a:hover {
+  all: unset;
+  transition: 0.5s;
+  cursor: pointer;
+  color: #dddddd;
+}
+
+footer .icons {
+  position: absolute;
+  margin-right: 800px;
+}
+
+footer > .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer .icons svg {
+  margin: 2px;
+}
+
+footer .icons svg:hover {
+  cursor: pointer;
+}
+
+footer input,
+footer button {
+  all: unset;
+  border-bottom: 2px solid white;
+  color: white;
+}
+
+footer input {
+  margin-right: 5px;
+}
+
+footer input::placeholder {
+  color: white;
+}
+
+@media only screen and (max-width: 992px) {
+  footer {
+    height: auto;
+  }
+  footer > section {
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    height: auto;
+  }
+
+  footer > section .grid-item {
+    margin: auto;
+    width: 50%;
+    margin-bottom: 10px;
+  }
+
+  footer > section img {
+    margin: 0;
+  }
+
+  footer .icons {
+    position: unset;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  footer > .grid-item {
+    display: block;
+  }
 }

@@ -15,14 +15,17 @@
     <link rel="stylesheet" href="../../global styles/footer.css" />
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
+    
     <title>Radiance Aesthetic - About Us</title>
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lexend:wght@500&display=swap');
+
       .content h1 {
         /* font-size: 40px; */
         text-align: center;
       }
       .content .btn-doctor {
-        background-color: darkblue;
+        background-color: orange;
         color: white;
         transition-duration: 0.5s;
         text-align: center;
@@ -37,9 +40,45 @@
       /* .content h2 {
         font-size: 15px;
       } */
+
+      .info-box{
+        background-color: lightgrey;
+        width: 100%;
+        height: 800px;
+        margin-top: 30px;
+        padding-top: 50px;
+      }
+      .info-box-white{
+        background-color: white;
+        width: 100%;
+        height: 500px;
+        margin-top: 30px;
+        padding-top: 150px;
+      }
+      .content h4 {
+        font-size: 56px;
+        font-family: 'EB Garamond', sans-serif;
+        color: #746661;
+      }
+      .content h5 {
+        font-size: 56px;
+        font-family: 'EB Garamond', sans-serif;
+        color: #746661;
+        text-align: right;
+        padding-top: 100px;
+      }
+      .content h6 {
+        font-size: 28px;
+        font-family: 'EB Garamond', sans-serif;
+        color: #aba49d;
+        text-align: right;
+      }
+
     </style>
   </head>
   <body>
+
+    <!--Header-->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
@@ -138,20 +177,42 @@
         </div>
       </div>
     </nav>
+
+
+    <!--Main Section-->
     <section class="content">
-      <h1>About Us</h1>
-      <p>we are Radiance, where we help you develop your best outer self</p>
-      <p>
-        Over here, we offer top of the line services to make you look your most
-        beautiful selves
-      </p>
-      <div class="d-flex justify-content-center">
-        <a class="btn btn-doctor" href="../Doctor/doctor.html" role="button"
-          >See More</a
-        >
+      <div class = "info-box-white">
+        <h1>About Us</h1>
+        <p>we are Radiance, where we help you develop your best outer self</p>
+        <p>
+          Over here, we offer top of the line services to make you look your most
+          beautiful selves
+        </p>
       </div>
+      <div class = "info-box">
+        <h4>Who Are We</h4>
+        <h3>Radiance is a Aesthetic clinic offering many different services to help people<br>
+        to become as beautiful as possible or to remove any imperfections. We also offer<br>
+        beauty products that are easy to use</h3>
+        <h5>What we offer</h5>
+        <h6>We currently offer 2 services for skin: Anti-Aging Treatement, Acne Care<br>
+        and 2 services for body: Stretch Mark Removal and Laser Hair Removal.<br>
+        alongside that, we also offer beauty care products you can purchase and<br>
+        use at home to maintain your body and skin.</h6>
+      </div>
+      <div class = "info-box-white">
+      <h1>Our Doctor</h1>
+      <p>Dr Lily has been in the industry for over 10 years, <br />
+        she has experience in performing all of the procedure offered by Radience and <br />
+        have worked with multiple hospitals around Singapore </p>
+        <div class="d-flex justify-content-center">
+          <a class="btn btn-doctor" href="../Doctor/doctor.html" role="button"
+            >See More</a>
+        </div>
     </section>
 
+
+    <!--Footer-->
     <footer>
       <section>
         <div class="grid-item" style="flex: 2">

@@ -18,40 +18,57 @@
     <link rel="stylesheet" href="../../global styles/button.css" />
     <title>Radiance Aesthetic - Fractional CO2 Laser</title>
     <style>
-      #bg-image {
-        background: url('https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Ulthera-Youth-Revive-1-853x1024.jpg')
-          center center no-repeat;
-        background-size: cover;
-        width: 100%;
-        height: 105%;
-        position: absolute;
-        z-index: -1;
+      .content th,
+      .content td,
+      .content ul {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        color: #aba49d;
       }
 
-      #bg-blur {
-        background: rgba(0, 0, 0, 0.2);
-        backdrop-filter: blur(30px);
+      .content table {
         width: 100%;
-        height: 100%;
+      }
+
+      .content th,
+      .content td {
+        border: 2px solid #aba49d;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .content .information {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Ulthera-Youth-Revive-1-853x1024.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
       }
 
       .content .summary .summary-row,
-      .content .information .information-row {
+      .content .information .information-row,
+      .content .details-row {
         display: grid;
         grid-template-columns: auto auto;
       }
 
-      .content .summary .summary-row > div {
-        margin: 5%;
-      }
-
-      .content .information .information-row > div {
+      .content .summary .summary-row > div,
+      .content .information .information-row > div,
+      .details {
         margin: 5%;
       }
 
       .content .information .information-row h2,
       .content .information .information-row p {
         color: rgb(235, 235, 235);
+      }
+
+      .content .summary {
+        position: relative;
       }
 
       .content .information .information-row div:nth-of-type(1) {
@@ -64,8 +81,8 @@
         padding-left: 60px;
       }
 
-      .content .summary {
-        position: relative;
+      .content .details-row {
+        column-gap: 10%;
       }
 
       .content .align-bottom button {
@@ -239,9 +256,7 @@
         </div>
       </div>
       <div class="information">
-        <div id="bg-image">
-          <div id="bg-blur"></div>
-        </div>
+        <div id="bg-blur"></div>
         <div class="information-row">
           <div>
             <h2>
@@ -300,6 +315,8 @@
         <div class="details-row">
           <div>
             <h2>Candidates for treatment</h2>
+          </div>
+          <div>
             <p>
               The Fractional CO2 treatment is recommended for those who
               experience:
@@ -313,6 +330,42 @@
               It is advisable not to proceed with the treatment if you have any
               infections or exposed wounds on your bare face, including those
               who take oral isotretinoin.
+            </p>
+          </div>
+          <div>
+            <h2>Pricing plan</h2>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <th>Session(s)</th>
+                <th>Pricing plan</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Single session</td>
+                  <td>$350</td>
+                </tr>
+                <tr>
+                  <td>3 sessions</td>
+                  <td>$900</td>
+                </tr>
+                <tr>
+                  <td>6 sessions</td>
+                  <td>$1,740</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Recommended Session: 3 - 7 sessions<br />Recommended
+                    Intervals: 3 - 6 months<br />Recovery Time: 5-7 days
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <p>
+              Book an appointment today for a professional consultation with our
+              team of doctors to find out what suits you best.
             </p>
           </div>
         </div>

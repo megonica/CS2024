@@ -15,7 +15,61 @@
     <link rel="stylesheet" href="../../global styles/footer.css" />
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
+    <link rel="stylesheet" href="../../global styles/button.css" />
     <title>Radiance Aesthetic - Blog</title>
+    <style>
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 0;
+        /* background-color: #fff7ec; */
+      }
+      .content .blog-cards {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+
+      .content .blog-card {
+        width: 390px;
+        height: 700px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        text-align: center;
+        margin: 10px;
+      }
+
+      .content .blog-card img {
+        width: 370px;
+        height: 420px;
+        object-fit: cover;
+      }
+
+      .content .blog-card h5 {
+        font-family: 'EB Garamond', sans-serif;
+        font-size: 14px;
+        color: #e69e6c;
+      }
+
+      .content .blog-card .blog-content {
+        margin: 10px 50px 10px 50px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        .content .blog-cards {
+          grid-template-columns: auto auto;
+        }
+      }
+
+      @media only screen and (max-width: 768px) {
+        .content .blog-cards {
+          grid-template-columns: auto;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -117,7 +171,122 @@
       </div>
     </nav>
     <section class="content">
-      <p>Place content here (to remove)</p>
+      <div class="blog-cards">
+        <div class="blog-card">
+          <img
+            src="https://imageio.forbes.com/specials-images/imageserve/633d579e2a27d554d878b209/Austria--Salzburg-County--Young-woman-taking-bath-in-wooden-tub/960x0.jpg?format=jpg&width=960"
+            alt="blog-img"
+          />
+          <div class="blog-content">
+            <h5>October 6, 2022</h5>
+            <h2>Enhance Your Body Care Routine</h2>
+            <p>
+              This Fall, it is time to follow the vital rule of skincare for
+              regeneration and repair.
+            </p>
+            <button
+              name="book"
+              data-url="https://www.forbes.com/sites/biancasalonga/2022/10/06/how-to-elevate-your-body-care-routine-this-fall/?sh=e8585d32aa3e"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://media.wired.com/photos/5f400a0437e06d513ea90707/master/w_1600,c_limit/Gear-Skincare-1223714147.jpg"
+            alt="blog-img"
+          />
+          <div class="blog-content">
+            <h5>Septemeber 3, 2022</h5>
+            <h2>How To Prevent & Treat Face Mascne</h2>
+            <p>Get mask acne under control. Eliminate unexpected breakouts.</p>
+            <button
+              name="book"
+              data-url="https://www.wired.com/story/mascne-causes-and-treatments/"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://post.medicalnewstoday.com/wp-content/uploads/sites/3/2022/08/acne_scars_Stocksy_txp26322a171HV300_Medium_3186890_Header-1024x575.jpg"
+            alt="blog-img"
+          />
+          <div class="blog-content">
+            <h5>July 10, 2022</h5>
+            <h2>Microneedling Vs Chemical Peels</h2>
+            <p>
+              Is Microneedling more effective than Chemical Peels? A new study
+              compares the 2 dermatological treatments.
+            </p>
+            <button
+              name="book"
+              data-url="https://www.medicalnewstoday.com/articles/acne-scars-is-microneedling-more-effective-than-chemical-peels"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://img.webmd.com/dtmcms/live/webmd/consumer_assets/site_images/articles/health_tools/acupuncture_massage_therapy_chiropractic_and_other_treatments_lupus/1800ss_getty_rf_sore-hands.jpg?resize=652px:*&output-quality=75"
+            alt="blog-img"
+          />
+          <div class="blog-content">
+            <h5>June 15 2022</h5>
+            <h2>Treatments For Lupus</h2>
+            <p>
+              Treatment for Lupus can sometimes hurt. Here are a few less
+              painful alternatives.
+            </p>
+            <button
+              name="book"
+              data-url="https://www.webmd.com/lupus/ss/acupuncture-massage-therapy-chiropractic-and-other-treatments-lupus"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://images.unsplash.com/photo-1536098624746-8b23d2a11cd3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
+            alt="blog-img"
+          />
+          <div class="blog-content">
+            <h5>June 11, 2022</h5>
+            <h2>Turn Back The Clock</h2>
+            <p>Weekly habits to keep yourself looking young and healthy.</p>
+            <button
+              name="book"
+              data-url="https://medium.com/in-fitness-and-in-health/skincare-turning-back-the-clock-on-42-years-c77186e73d98"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+        <div class="blog-card">
+          <img
+            src="https://aqua4balance.com/wp-content/uploads/2013/12/Effect-of-Sunlight-Exposure-on-Cognitive-Function-700x441.jpg"
+            alt="blog-img"
+          />
+          <div class="blog-content">
+            <h5>March 29, 2022</h5>
+            <h2>Climatotherapy For Psoriasis</h2>
+            <p>
+              Also known as climate therapy, venture to a healing environment
+              with seawater and sunlight.
+            </p>
+            <button
+              name="book"
+              data-url="https://www.webmd.com/skin-problems-and-treatments/psoriasis/climatotherapy-psoriasis"
+            >
+              READ MORE
+            </button>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -214,4 +383,13 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"
   ></script>
+  <script>
+    console.log(document.querySelectorAll('.content button'));
+    document.querySelectorAll('.content button').forEach((btn) => {
+      btn.addEventListener('click', (e) => {
+        const url = e.target.getAttribute('data-url');
+        window.location.href = url;
+      });
+    });
+  </script>
 </html>

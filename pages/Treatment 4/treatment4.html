@@ -16,8 +16,116 @@
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
     <link rel="stylesheet" href="../../global styles/button.css" />
-    <link rel="stylesheet" href="./style.css" />
     <title>Radiance Aesthetic - Fractional CO2 Laser</title>
+    <style>
+      .content th,
+      .content td,
+      .content ul {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        color: #aba49d;
+      }
+
+      .content table {
+        width: 100%;
+      }
+
+      .content th,
+      .content td {
+        border: 2px solid #aba49d;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .content .information {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Ulthera-Youth-Revive-1-853x1024.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .content .summary .summary-row,
+      .content .information .information-row,
+      .content .details-row {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .content .summary .summary-row > div,
+      .content .information .information-row > div,
+      .details {
+        margin: 5%;
+      }
+
+      .content .information .information-row h2,
+      .content .information .information-row p {
+        color: rgb(235, 235, 235);
+      }
+
+      .content .summary {
+        position: relative;
+      }
+
+      .content .information .information-row div:nth-of-type(1) {
+        margin-top: 30%;
+        padding-right: 60px;
+      }
+
+      .content .information .information-row div:nth-of-type(2) {
+        text-align: right;
+        padding-left: 60px;
+      }
+
+      .content .details-row {
+        column-gap: 10%;
+      }
+
+      .content .align-bottom button {
+        position: absolute;
+        bottom: 5%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .summary .summary-row,
+        .content .information .information-row {
+          grid-template-columns: auto;
+        }
+
+        .content .summary .summary-row > div {
+          margin: 5%;
+          margin-top: 0;
+        }
+
+        .content .information .information-row > div {
+          margin: 0 5% 0 5%;
+        }
+
+        .content .information .information-row div:nth-of-type(1) {
+          margin-top: 5%;
+          padding-right: 0;
+        }
+
+        .content .information .information-row div:nth-of-type(2) {
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5%;
+        }
+
+        .content .align-bottom button {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -116,9 +224,9 @@
     </nav>
 
     <section class="content">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
+      <div class="summary">
+        <div class="summary-row">
+          <div>
             <h1>Fractional CO<sub>2</sub> Laser</h1>
             <h3>Acne Scars Removal Treatment</h3>
             <p>
@@ -138,7 +246,7 @@
               <button name="book">BOOK NOW</button>
             </div>
           </div>
-          <div class="col-lg-6">
+          <div>
             <img
               class="img-fluid"
               src="https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Ulthera-Youth-Revive-1-853x1024.jpg"
@@ -147,10 +255,14 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h2>What is the Fractional CO2 Laser treatment?</h2>
+      <div class="information">
+        <div id="bg-blur"></div>
+        <div class="information-row">
+          <div>
+            <h2>
+              What is the<br />
+              Fractional CO<sub>2</sub> Laser treatment?
+            </h2>
             <p>
               Acne arises from the accumulation of dead skin cells and excess
               serum oil, which worsens with bacteria present. This condition can
@@ -164,33 +276,96 @@
               As you get older, the more noticeable the scars become due to a
               lack of collagen, a protein that keeps our skin looking youthful
               and healthy. Hence, it is advisable to start treatment early.
-              Fractional CO2 Treatment promises a painless and non-invasive
-              procedure that enhances your overall skin tone for a radiant glow
-              and fresh outlook.
+              Fractional CO<sub>2</sub> Treatment promises a painless and
+              non-invasive procedure that enhances your overall skin tone for a
+              radiant glow and fresh outlook.
             </p>
           </div>
-          <div class="col-lg-6">
-            <h2>How does it work?</h2>
+          <div>
+            <h2>How does<br />it work?</h2>
             <p>
-              scars such as icepick, boxcar and rolling. The strength of the
-              laser is adjusted based on the severity of acne scars. Numbing
-              agent is first applied to the target area. The fractional CO2
-              laser fires short pulses of light energy that gently peels off the
-              damaged epidermis of the skin area. The freshly exposed dermis
-              skin layer absorbs thermal energy from the light of the laser and
-              stimulates collagen production for natural skin regeneration and
-              healing.
+              The treatment is suitable for common acne scars such as icepick,
+              boxcar and rolling. The strength of the laser is adjusted based on
+              the severity of acne scars.
             </p>
-            <h2>Why choose Fractional CO2 Laser?</h2>
             <p>
-              Painless, safe and non-ablative, Fractional CO2 Laser restores
-              skin irregularities with uniform colouration and complexity and
-              targets specific areas for a tailored treatment. At minimal
-              downtime, most clients are able to return to normal activities
-              after 5-7 days, a duration shorter than surgical procedures and
-              Fraxel laser. The treatment also has low discomfort and minimal
-              side effects, which can be easily alleviated post-treatment with
-              regular mositurisation and avoiding direct sunlight.
+              Numbing agent is first applied to the target area. The fractional
+              CO<sub>2</sub> laser fires short pulses of light energy that
+              gently peels off the damaged epidermis of the skin area. The
+              freshly exposed dermis skin layer absorbs thermal energy from the
+              light of the laser and stimulates collagen production for natural
+              skin regeneration and healing.
+            </p>
+            <h2>Why choose<br />Fractional CO<sub>2</sub> Laser?</h2>
+            <p>
+              Painless, safe and non-ablative, Fractional CO<sub>2</sub> Laser
+              restores skin irregularities with uniform colouration and
+              complexity and targets specific areas for a tailored treatment. At
+              minimal downtime, most clients are able to return to normal
+              activities after 5-7 days, a duration shorter than surgical
+              procedures and Fraxel laser. The treatment also has low discomfort
+              and minimal side effects, which can be easily alleviated
+              post-treatment with regular mositurisation and avoiding direct
+              sunlight.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-row">
+          <div>
+            <h2>Candidates for treatment</h2>
+          </div>
+          <div>
+            <p>
+              The Fractional CO2 treatment is recommended for those who
+              experience:
+            </p>
+            <ul>
+              <li>Acne scars</li>
+              <li>Fine lines and wrinkles</li>
+              <li>Sunburnt skin</li>
+            </ul>
+            <p>
+              It is advisable not to proceed with the treatment if you have any
+              infections or exposed wounds on your bare face, including those
+              who take oral isotretinoin.
+            </p>
+          </div>
+          <div>
+            <h2>Pricing plan</h2>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <th>Session(s)</th>
+                <th>Pricing plan</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Single session</td>
+                  <td>$350</td>
+                </tr>
+                <tr>
+                  <td>3 sessions</td>
+                  <td>$900</td>
+                </tr>
+                <tr>
+                  <td>6 sessions</td>
+                  <td>$1,740</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Recommended Session: 3 - 7 sessions<br />Recommended
+                    Intervals: 3 - 6 months<br />Recovery Time: 5-7 days
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <p>
+              Book an appointment today for a professional consultation with our
+              team of doctors to find out what suits you best.
             </p>
           </div>
         </div>
@@ -291,4 +466,11 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"
   ></script>
+  <script>
+    document.querySelectorAll('button[name="book"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = '../Contact/contact.html';
+      });
+    });
+  </script>
 </html>

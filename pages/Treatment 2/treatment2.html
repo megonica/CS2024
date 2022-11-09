@@ -11,20 +11,145 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../global styles/header.css" />
-    <link rel="stylesheet" href="../../global styles/footer.css" />
-    <link rel="stylesheet" href="../../global styles/content.css" />
-    <link rel="stylesheet" href="../../global styles/font.css" />
+    <link rel="stylesheet" href="global styles/header.css" />
+    <link rel="stylesheet" href="global styles/footer.css" />
+    <link rel="stylesheet" href="global styles/content.css" />
+    <link rel="stylesheet" href="global styles/font.css" />
+    <link rel="stylesheet" href="global styles/button.css" />
     <title>Radiance Aesthetic - Laser Hair Removal</title>
-    <!-- <style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&family=Lexend:wght@500&display=swap');
+
+      /*
       .content h1 {
         font-size: 30px;
       }
-
       .content {
         font-size: 15px;
+      } 
+      .info-box{
+        background-color: lightgrey;
+        width: 100%;
+        height: 500px;
+        margin-top: 30px;
       }
-    </style> -->
+      .content h4{
+        font-size: 25px;
+        font-family: 'Lexend', sans-serif;
+      }
+      .content h5{
+        font-size: 15px;
+        font-family: 'Lexend', sans-serif;
+      }*/
+
+      .content th,
+      .content td,
+      .content ul {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        color: #aba49d;
+      }
+
+      .content table {
+        width: 100%;
+      }
+
+      .content th,
+      .content td {
+        border: 2px solid #aba49d;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .content .information {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.pexels.com/photos/7187195/pexels-photo-7187195.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .content .summary .summary-row,
+      .content .information .information-row,
+      .content .details-row {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .content .summary .summary-row > div,
+      .content .information .information-row > div,
+      .details {
+        margin: 5%;
+      }
+
+      .content .information .information-row h2,
+      .content .information .information-row p {
+        color: rgb(235, 235, 235);
+      }
+
+      .content .summary {
+        position: relative;
+      }
+
+      .content .information .information-row div:nth-of-type(1) {
+        margin-top: 30%;
+        padding-right: 60px;
+      }
+
+      .content .information .information-row div:nth-of-type(2) {
+        text-align: right;
+        padding-left: 60px;
+      }
+
+      .content .details-row {
+        column-gap: 10%;
+      }
+
+      .content .align-bottom button {
+        position: absolute;
+        bottom: 5%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .summary .summary-row,
+        .content .information .information-row {
+          grid-template-columns: auto;
+        }
+
+        .content .summary .summary-row > div {
+          margin: 5%;
+          margin-top: 0;
+        }
+
+        .content .information .information-row > div {
+          margin: 0 5% 0 5%;
+        }
+
+        .content .information .information-row div:nth-of-type(1) {
+          margin-top: 5%;
+          padding-right: 0;
+        }
+
+        .content .information .information-row div:nth-of-type(2) {
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5%;
+        }
+
+        .content .align-bottom button {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    </style> 
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -122,13 +247,136 @@
     </nav>
 
     <section class="content">
-      <h1>Laser Hair Removal<br />Remove the unwanted hairs</h1>
-      <p>
-        We use a dual functional laser to remove all the unwanted hair around
-        the body,<br />
-        it is a long lasting procedure, making sure your skin feels silky smooth
-        without the hairs.
-      </p>
+      <div class="summary">
+        <div class="summary-row">
+          <div>
+            <h1>Laser Hair Removal</h1>
+            <h3>Remove the unwanted hairs</h3>
+            <p>
+              We use a dual functional laser to remove all the unwanted hair around
+              the body, it is a long lasting procedure, making sure your skin feels silky smooth
+              without the hairs. It can be done with both male or female.
+            </p>
+            <p>
+              Utilizing the laser's 2 wavelengths to target the hair on the body without the surrounding skin
+              cells by having the hair follicle absorb the light, thus burning away the hair while leaving the
+              skin intact.
+            </p>
+            <div class="align-bottom">
+              <button name="book">BOOK NOW</button>
+            </div>
+          </div>
+        <div>
+          <img class = "img-fluid" 
+          src = "https://images.pexels.com/photos/7187195/pexels-photo-7187195.jpeg"
+          alt = "profile"
+          />
+        </div>
+      </div>
+    </div>
+
+
+    <div class = "information">
+      <div id="bg-blur"></div>
+      <div class = "information-row">
+        <div>
+          <h2>Which part of the body can hair be removed?</h2>
+          <p>The procedure can be performed in this areas:</p>
+          <ul>
+            <li>Face</li>
+            <li>Hands</li>
+            <li>Arms</li>
+            <li>Torso</li>
+            <li>Back</li>
+            <li>Legs</li>
+            <li>Feet</li>
+          </ul>
+        </div>
+        <div>
+          <h2>Is the Procedure Safe?</h2>
+          <p>The procedure is low risk, in addition our expert team will ensure all proper procedure is followed to mimize risk of complications.</p>
+          <h2>Does it work on people with darker skin?</h2>
+          <p>The procedure works on people with all kinds of skin pigmentation, without much increased pain.</p>
+          <h2>Does the procedure cause pain?</h2>
+          <p>The procedure will mostly only cause discomfort, especially since we will moisturize the target area
+            before performing the procedure. </p>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="details">
+      <div class="details-row">
+        <div>
+          <h2>Candidates for treatment</h2>
+        </div>
+        <div>
+          <p>
+            Laser Hair Removal treatment is recommended for:
+          </p>
+          <ul>
+            <li>People who dislike shaving</li>
+            <li>People who suffered razor burn when shaving</li>
+            <li>Both men and women</li>
+          </ul>
+          <p>
+            It is advisable not to proceed with the treatment if you had skin cancer,
+            are taking acne medicine or have keloid scars.
+          </p>
+        </div>
+        <div>
+          <h2>Pricing plan</h2>
+        </div>
+        <div>
+          <table>
+            <thead>
+              <th>Body</th>
+              <th>Pricing plan(Female)</th>
+              <th>Pricing plan(Male)</th>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Lip</td>
+                <td>$200/Session</td>
+                <td>$250/Session</td>
+              </tr>
+              <tr>
+                <td>Underarm</td>
+                <td>$250/Session</td>
+                <td>$300/Session</td>
+              </tr>
+              <tr>
+                <td>Full Leg</td>
+                <td>$450/Session</td>
+                <td>$500/Session</td>
+              </tr>
+              <tr>
+                <td>Full Back</td>
+                <td>$450/Session</td>
+                <td>$500/Session</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  Recommended Session: 5 - 8 sessions<br />Recommended
+                  Intervals: 2 - 3 Weeks<br />Recovery Time: 24 hours
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <br />
+          <p>
+            Book an appointment today for a professional consultation with our
+            team of doctors to find out what suits you best.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    </div>
+
+      
+			
     </section>
 
     <footer>

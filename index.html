@@ -16,6 +16,92 @@
     <link rel="stylesheet" href="./global styles/content.css" />
     <link rel="stylesheet" href="./global styles/font.css" />
     <title>Radiance Aesthetic - Home</title>
+    <style type="text/css">
+      @media (max-width: 800px) {
+        .flex-container {
+          flex-direction: column;
+        }
+      }
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      button {
+        background: #E69E6C;
+        color: #ffffff;
+        text-align: center;
+      }
+      .h2-center {
+        display: flex;
+        justify-content: center;
+        width: 1280px;
+      }
+      .hero {
+        display: flex;
+        width: 1280px;
+        height: 520px;
+      }
+      .hero-left {
+        flex: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        border: 1px solid;
+      }
+      .hero-right {
+        flex: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: 1px solid;
+      }
+      .hero-right img {
+        width: 520px;
+        height: 400px;
+        margin-right: 48px;
+        border: 1px solid;        
+      }
+      .about {
+        display: flex;
+        width: 1280px;
+        height: 520px;
+      }
+      .about-left {
+        flex: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border: 1px solid;
+      }
+      .about-left img {
+        width: 520px;
+        height: 400px;
+        margin-left: 48px;
+        border: 1px solid;        
+      }
+      .about-right {
+        flex: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column;
+        border: 1px solid;
+      }
+      .reasons {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1280px;
+        height: 466px;
+        justify-content: space-between;
+      }
+      .reasons-box {
+        text-align: center;
+        background: #D9D9D9;
+        width: 240px;
+        height: 240px;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -124,7 +210,39 @@
       </div>
     </nav>
     <section class="content">
-      <p>Place content here (to remove)</p>
+      <div class="hero">
+        <div class="hero-left">
+          <div class="hero-left-content">
+            <h1>Radiance Aesthetic</h1>
+            <h2>Your ideal aesthetic partner</h2>
+            <button>Book Now</button>            
+          </div>
+        </div>
+        <div class="hero-right">
+          <img src="#">
+        </div>
+      </div>
+      <div class="about">
+        <div class="about-left">
+          <img src="#">
+        </div>
+        <div class="about-right">
+          <h2>Welcome to Radiance Aesthetic</h2>
+          <p>
+            We believe that the personal pursuit of beauty should be experienced like a journey, or a friendship. We pride ourselves in taking care of you whole-heartedly and place importance in serving beauty with heart, while maintaining a high level of discreteness. Let us walk alongside you on your journey to self-improvement, so your beauty can shine through. 
+          </p>
+          <button>About Us</button>
+        </div>
+      </div>
+      <div class="reasons">
+        <div class="h2-center">
+          <h2>Why choose us?</h2>
+        </div>
+        <div class="reasons-box"><p>box 1</p></div>
+        <div class="reasons-box"><p>box 2</p></div>
+        <div class="reasons-box"><p>box 3</p></div>
+        <div class="reasons-box"><p>box 4</p></div>
+      </div>
     </section>
 
     <footer>
@@ -205,7 +323,7 @@
           <p
             style="text-align: center; color: white; font-size: 12px; margin: 0"
           >
-            Radiance Aesthetic 2022 (C) All rights reserved
+            Radiance Aesthetic 2022 &copy All rights reserved
           </p>
         </div>
       </div>

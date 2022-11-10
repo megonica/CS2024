@@ -11,10 +11,10 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../../global styles/header.css" />
-    <link rel="stylesheet" href="../../global styles/footer.css" />
-    <link rel="stylesheet" href="../../global styles/content.css" />
-    <link rel="stylesheet" href="../../global styles/font.css" />
+    <link rel="stylesheet" href="global styles/header.css" />
+    <link rel="stylesheet" href="global styles/footer.css" />
+    <link rel="stylesheet" href="global styles/content.css" />
+    <link rel="stylesheet" href="global styles/font.css" />
     
     <title>Radiance Aesthetic - About Us</title>
     <style>
@@ -42,15 +42,38 @@
       } */
 
       .info-box{
-        background-color: lightgrey;
+        background-color: #fff7ec;
         width: 100%;
         height: 800px;
         margin-top: 30px;
         padding-top: 50px;
       }
-      .info-box-white{
-        background-color: white;
-        width: 100%;
+
+      .content .info-box-white{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.pexels.com/photos/10521230/pexels-photo-10521230.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+        height: 500px;
+        margin-top: 30px;
+        padding-top: 150px;
+      }
+
+      .content .info-box-white-2{
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.pexels.com/photos/7108396/pexels-photo-7108396.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
         height: 500px;
         margin-top: 30px;
         padding-top: 150px;
@@ -67,6 +90,12 @@
         text-align: right;
         padding-top: 100px;
       }
+      .content .info-box-white h1,
+      .content .info-box-white p,
+      .content .info-box-white-2 h1,
+      .content .info-box-white-2 p{
+        color: white;
+      }
       .content h6 {
         font-size: 28px;
         font-family: 'EB Garamond', sans-serif;
@@ -76,7 +105,7 @@
 
       @media only screen and (max-width: 992px) {
         .info-box{
-        background-color: lightgrey;
+        background-color: #fff7ec;
         width: 100%;
         height: 800px;
         margin-top: 30px;
@@ -118,24 +147,13 @@
             <li class="nav-item">
               <a class="nav-link" href="../../index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item">
               <a
                 class="nav-link active"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
+                aria-current="page"
+                href="../About/About Us.html"
+                >About</a
               >
-                About
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="../Doctor/doctor.html"
-                    >Our Doctor</a
-                  >
-                </li>
-              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -229,7 +247,7 @@
         alongside that, we also offer beauty care products you can purchase and<br>
         use at home to maintain your body and skin.</h6>
       </div>
-      <div class = "info-box-white">
+      <div class = "info-box-white-2">
       <h1>Our Doctor</h1>
       <p>Dr Lily has been in the industry for over 10 years, <br />
         she has experience in performing all of the procedure offered by Radience and <br />

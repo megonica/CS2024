@@ -16,11 +16,97 @@
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
     <title>Radiance Aesthetic - Our Doctors</title>
-    <!-- <style>
-      .content h2 {
+     <style>
+     /* .content h2 {
         font-size: 15px;
+      } */
+
+      .content p{
+        font-size: 18px;
+        padding: 20px;
       }
-    </style> -->
+      .content .summary .summary-row,
+      .content .information .information-row
+      {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .content .summary .summary-row > div,
+      .content .information .information-row > div
+      {
+        margin: 5%;
+      }
+
+      .content .summary {
+        position: relative;
+      }
+
+      .content .information .information-row div:nth-of-type(1) {
+        margin-top: 30%;
+        padding-right: 60px;
+      }
+
+      .content .information .information-row div:nth-of-type(2) {
+        text-align: right;
+        padding-left: 60px;
+      }
+
+      .content .summary .summary-row,
+      .content .information .information-row {
+        grid-template-columns: auto;
+      }
+
+      .content .information .information-row h2,
+      .content .information .information-row p {
+        color: rgb(235, 235, 235);
+      }
+
+      .content .information {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.pexels.com/photos/10521230/pexels-photo-10521230.jpeg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+        height: 400px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .summary .summary-row,
+        .content .information .information-row {
+          grid-template-columns: auto;
+        }
+
+        .content .summary .summary-row > div {
+          margin: 5%;
+          margin-top: 0;
+        }
+
+        .content .information .information-row > div {
+          margin: 0 5% 0 5%;
+        }
+
+        .content .information .information-row div:nth-of-type(1) {
+          margin-top: 5%;
+          padding-right: 0;
+        }
+
+        .content .information .information-row div:nth-of-type(2) {
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5%;
+        }
+        }
+      
+    </style> 
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -118,14 +204,20 @@
     </nav>
 
     <section class="content">
-      <h1>Our Doctors</h1>
-      <p>Dr Lily has a decade of experience in the field of beauty care<br />
-      he/she has gotten many awards and have many sastified clients over the years</p>
-      <h1>Her qualifications</h1>
-      <p>Dr lily graduated with a bachelors in Medicine and Surgery and gotten her PhD</p>
-      <h1>Her Achievements</h1>
-      <p>Dr lily had given talks about the field in many conferences</p>
-
+      <div class = "summary">
+        <div class = "summary-row">
+          <h1>Our Doctor</h1>
+          <p>Dr Lily has a decade of experience in the field of beauty care,<br>
+          she has gotten many awards and have many sastified clients over the years.<br>
+          As the Medical Director and Lead Doctor of Radiance, she believe that everyone<br>
+          deserve to be outer beauty to reflect their inner beauty. She keeps up with<br>
+          the latest development in aesthetic care to enhance her skills and your beauty.</p>
+          <p>Dr Lily graduated with a degree in Medical Sciences and a Postgraduate degree,<br>
+            she had been apart of multiple clinics all around the world, working with many<br>
+            different clients over the years and now founded Radiance to help Singaporeans<br>
+            with beauty care.</p>
+        </div>
+      </div>
       
     </section>
 

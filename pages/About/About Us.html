@@ -11,10 +11,10 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="global styles/header.css" />
-    <link rel="stylesheet" href="global styles/footer.css" />
-    <link rel="stylesheet" href="global styles/content.css" />
-    <link rel="stylesheet" href="global styles/font.css" />
+    <link rel="stylesheet" href="../../global styles/header.css" />
+    <link rel="stylesheet" href="../../global styles/footer.css" />
+    <link rel="stylesheet" href="../../global styles/content.css" />
+    <link rel="stylesheet" href="../../global styles/font.css" />
     
     <title>Radiance Aesthetic - About Us</title>
     <style>
@@ -41,12 +41,14 @@
         font-size: 15px;
       } */
 
-      .info-box{
+      .content .info-box{
         background-color: #fff7ec;
         width: 100%;
         height: 800px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         padding-top: 50px;
+        padding-left: 5%;
+        padding-right: 5%;
       }
 
       .content .info-box-white{
@@ -75,7 +77,7 @@
         background-position: center;
         backdrop-filter: blur(10px);
         height: 500px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         padding-top: 150px;
       }
       .content h4 {
@@ -104,14 +106,14 @@
       }
 
       @media only screen and (max-width: 992px) {
-        .info-box{
+        .content .info-box{
         background-color: #fff7ec;
         width: 100%;
         height: 800px;
         margin-top: 30px;
         padding-top: 50px;
       }
-      .info-box-white{
+      .content .info-box-white{
         background-color: white;
         width: 100%;
         height: 500px;
@@ -147,13 +149,24 @@
             <li class="nav-item">
               <a class="nav-link" href="../../index.html">Home</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item dropdown">
               <a
                 class="nav-link active"
-                aria-current="page"
-                href="../About/About Us.html"
-                >About</a
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
               >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../Doctor/doctor.html"
+                    >Our Doctor</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a

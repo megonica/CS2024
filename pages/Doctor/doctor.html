@@ -4,6 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Dr Lily graduated with a degree in Medical Sciences and a
+              Postgraduate degree, she had been apart of multiple clinics all
+              around the world, working with many different clients over the
+              years and now founded Radiance to help Singaporeans with beauty
+              care."
+    />
     <link rel="icon" type="image/icon" href="../../images/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -15,18 +23,102 @@
     <link rel="stylesheet" href="../../global styles/footer.css" />
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
-    <title>Radiance Aesthetic - Our Doctors</title>
-    <!-- <style>
-      .content h2 {
+    <title>Radiance Aesthetic - Our Doctor</title>
+    <style>
+      /* .content h2 {
         font-size: 15px;
+      } */
+
+      .content p {
+        font-size: 18px;
       }
-    </style> -->
+      .content .summary .summary-row,
+      .content .information .information-row,
+      .content .details-row {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .content .summary .summary-row > div,
+      .content .information .information-row > div,
+      .details {
+        margin: 5%;
+      }
+
+      .content .information .information-row h2,
+      .content .information .information-row p {
+        color: rgb(235, 235, 235);
+      }
+
+      .content .summary {
+        position: relative;
+      }
+
+      .content .information .information-row div:nth-of-type(1) {
+        margin-top: 30%;
+        padding-right: 60px;
+      }
+
+      .content .information .information-row div:nth-of-type(2) {
+        text-align: right;
+        padding-left: 60px;
+      }
+
+      .content .details-row {
+        column-gap: 10%;
+      }
+
+      .content .align-bottom button {
+        position: absolute;
+        bottom: 5%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .summary .summary-row,
+        .content .information .information-row {
+          grid-template-columns: auto;
+        }
+
+        .content .summary .summary-row > div {
+          margin: 5%;
+          margin-top: 0;
+        }
+
+        .content .information .information-row > div {
+          margin: 0 5% 0 5%;
+        }
+
+        .content .information .information-row div:nth-of-type(1) {
+          margin-top: 5%;
+          padding-right: 0;
+        }
+
+        .content .information .information-row div:nth-of-type(2) {
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5%;
+        }
+
+        .content .align-bottom button {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="../../images/radiance_logo_BG_None.png" alt="Logo" />
+          <img
+            src="../../images/radiance_logo_BG_None.png"
+            alt="Logo"
+            title="Logo"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -44,8 +136,29 @@
             <li class="nav-item">
               <a class="nav-link" href="../../index.html">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../About/About Us.html">About</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link active"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="../About/About Us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../Doctor/doctor.html"
+                    >Our Doctor</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -118,21 +231,46 @@
     </nav>
 
     <section class="content">
-      <h1>Our Doctors</h1>
-      <p>Dr Lily has a decade of experience in the field of beauty care<br />
-      he/she has gotten many awards and have many sastified clients over the years</p>
-      <h1>Her qualifications</h1>
-      <p>Dr lily graduated with a bachelors in Medicine and Surgery and gotten her PhD</p>
-      <h1>Her Achievements</h1>
-      <p>Dr lily had given talks about the field in many conferences</p>
-
-      
+      <div class="summary">
+        <div class="summary-row">
+          <div>
+            <h1>Our Doctor</h1>
+            <p>
+              Dr Lily has a decade of experience in the field of beauty care,
+              she has gotten many awards and have many satisfied clients over
+              the years. As the Medical Director and Lead Doctor of Radiance,
+              she believe that everyone deserve to be outer beauty to reflect
+              their inner beauty. She keeps up with the latest development in
+              aesthetic care to enhance her skills and your beauty.
+            </p>
+            <p>
+              Dr Lily graduated with a degree in Medical Sciences and a
+              Postgraduate degree, she had been apart of multiple clinics all
+              around the world, working with many different clients over the
+              years and now founded Radiance to help Singaporeans with beauty
+              care.
+            </p>
+          </div>
+          <div>
+            <img
+              class="img-fluid"
+              src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+              alt="doctor-profile"
+              title="Dr Lily"
+            />
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
       <section>
         <div class="grid-item" style="flex: 2">
-          <img src="../../images/radiance_logo_light_BG_None.png" alt="Logo" />
+          <img
+            src="../../images/radiance_logo_light_BG_None.png"
+            alt="Logo"
+            title="Logo"
+          />
         </div>
         <div
           class="grid-item"

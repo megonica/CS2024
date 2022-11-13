@@ -33,12 +33,11 @@
       .content .reviews .reviews-row > div {
         margin: 5%;
       }
-
+      
       .content .hero .hero-row > div {
         padding-top: 100px;
         padding-bottom: 100px;
       }
-
       .content .hero {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.6),
@@ -65,7 +64,7 @@
       .content .treatments .treatments-row {
         grid-template-columns: auto auto auto auto;
       }
-
+      
       .content .reasons .reasons-row .reasons-box {
         width: 240px;
         height: 240px;
@@ -98,7 +97,7 @@
           ),
           url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
       }
-
+      
       .r4 {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.6),
@@ -106,7 +105,7 @@
           ),
           url('https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
       }
-
+      
       .content .treatments .treatments-row {
         grid-template-areas: 
           'title title title title' 
@@ -136,7 +135,7 @@
           ),
           url('https://images.unsplash.com/photo-1573580711445-fb48e7af4528?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
       }
-
+      
       .t2 {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.6),
@@ -144,7 +143,7 @@
           ),
           url('https://images.unsplash.com/photo-1533228705496-072ca298b122?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
       }
-
+      
       .t3 {
         background-image: linear-gradient(
             rgba(0, 0, 0, 0.6),
@@ -189,8 +188,6 @@
         .content .treatments .treatments-row .treatments-body-text {grid-area: 1 / 1 / 2 / 2;}
         .content .treatments .treatments-row .treatments-skin-img {grid-area: 4 / 1 / 5 / 2;}
         .content .treatments .treatments-row .treatments-skin-text {grid-area: 3 / 1 / 4 / 2;}
-
-
       }
     </style>
   </head>
@@ -216,8 +213,29 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./pages/About/About Us.html">About</a>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="./pages/About/About Us.html"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/Doctor/doctor.html"
+                    >Our Doctor</a
+                  >
+                </li>
+              </ul>
             </li>
             <li class="nav-item dropdown">
               <a

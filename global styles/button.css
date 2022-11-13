@@ -137,3 +137,28 @@ button[name='t4']:hover {
   border: 2px solid #e69e6c;
   text-align: center;
 }
+
+input[type=submit] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+input[type=submit]:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+  margin-top: 30px;
+}

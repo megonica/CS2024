@@ -15,22 +15,78 @@
     <link rel="stylesheet" href="../../global styles/footer.css" />
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
+    <link rel="stylesheet" href="../../global styles/button.css" />
     <title>Radiance Aesthetic - Contact Us</title>
     <style type="text/css">
+      .content td {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        color: #aba49d;
+      }
+
+      .content table {
+        width: 100%;
+      }
+
       .content .info .info-rows,
       .content .location .location-rows {
         display: grid;
+      }
+
+      .content .info .info-rows > div, 
+      .content .location .location-rows > div,
+      .content .info, 
+      .location {
+        margin: 5%;
       }
 
       .content .info .info-rows {
         grid-template-columns: 60fr 30fr;
       }
 
-      .content .location .location-rows {
+      .content input[type=text], 
+      .content textarea {
+        border: none;
+        border-bottom: 2px solid #aba49d;
+        width: 100%;
+        color: #aba49d;
+        margin: 30px 0px 0px;
       }
 
-      @media screen and (max-width: 992px) {
+      .content textarea { 
+        resize: none;
       }
+
+      .info-rows > textarea::placeholder,
+      .info-rows > input[type=text]::placeholder {
+        color: #aba49d;
+      }
+
+      .content .location .location-rows {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        padding-top: 56.25%; /* 56.25% 16:9 Aspect Ratio */
+      }
+
+      .content .location .location-rows .location-responsive {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      
+      @media screen and (max-width: 992px) {
+        .content .info .info-rows {
+          grid-template-columns: auto;
+        }
+        
+      }
+
     </style>
   </head>
   <body>
@@ -154,7 +210,85 @@
       </div>
     </nav>
 
-    <section class="content"></section>
+    <section class="content">
+      <div class="info">
+        <h1>Contact Us</h1>
+        <div class="info-rows">
+          <div>
+            <p>
+              Have any queries about the treatments? Want to find out more about how we can cater the treatments for your needs? Book a free consultation with us today. Leave your contact details below.
+            </p>
+            <form action="#" method="post">
+              <table>
+                <tr>
+                  <td>
+                    <input type="text" name="first-name" placeholder="First name">
+                  </td>
+                  <td>
+                    <input type="text" name="last-name" placeholder="Last name">
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="text" name="email" placeholder="Email">
+                  </td>
+                  <td>
+                    <input type="text" name="phone-number" placeholder="Phone number">
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <textarea name="message" placeholder="Message" maxlength="2000"></textarea>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="submit" name="submit">
+                </tr>
+              </table>
+            </form>
+          </div>
+          <div>
+            <h2>Find Us</h2>
+            <p>
+              123 Orchard Road<br/>
+              Building ABC #01-24<br/>
+              Singapore 238800
+            </p>
+            <h2>Get in touch</h2>
+            <p>
+              Phone: +65 6285 7285<br/>
+              Email: info@radiance.com
+            </p>
+            <h2>Socials</h2>
+            <p>
+              Facebook: Radiance Aesthetic SG<br/>
+              Instagram: @RadianceAestheticSG
+            </p>
+            <h2>Opening Hours</h2>
+            <p>
+              Mondays - Fridays: 11am - 8pm<br/>
+              Saturdays: 11am - 5pm<br/>
+              Sundays & Public Holidays: Closed
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="location">
+        <h2>Our Store Location</h2>
+        <div class="location-rows">
+          <div>
+            <iframe 
+              class="location-responsive" 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7837400500166!2d103.83000971399775!3d1.3048258620837716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da199148e6febb%3A0x8e99f73f37fef4fa!2sOrchard%20Rd!5e0!3m2!1sen!2ssg!4v1668327560143!5m2!1sen!2ssg" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer>
       <section>
@@ -234,7 +368,7 @@
           <p
             style="text-align: center; color: white; font-size: 12px; margin: 0"
           >
-            Radiance Aesthetic 2022 (C) All rights reserved
+            Radiance Aesthetic 2022 &copy All rights reserved
           </p>
         </div>
       </div>

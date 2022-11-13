@@ -18,6 +18,17 @@
     <link rel="stylesheet" href="./global styles/button.css" />
     <title>Radiance Aesthetic - Home</title>
     <style type="text/css">
+      .carousel-item {
+        display: block;
+      }
+
+      .carousel-item .treatments-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
       .content .hero .hero-row,
       .content .about .about-row,
       .content .reasons .reasons-row,
@@ -29,15 +40,28 @@
       .content .hero .hero-row > div,
       .content .about .about-row > div,
       .content .reasons .reasons-row > div,
-      .content .treatments .treatments-row > div,
+      /* .content .treatments .treatments-row > div, */
       .content .reviews .reviews-row > div {
         margin: 5%;
         margin-bottom: 80px;
       }
 
-      .content .reasons > h2, 
-      .content .treatments > h2, 
-      .content .treatments > p, 
+      .content .treatments .treatments-row {
+        margin: 5%;
+      }
+
+      .content .treatments {
+        margin-bottom: 8%;
+      }
+
+      .content .treatments .treatments-row > div {
+        margin-top: 5%;
+        margin-bottom: 5%;
+      }
+
+      .content .reasons > h2,
+      .content .treatments > h2,
+      .content .treatments > p,
       .content .reviews > h2 {
         text-align: center;
       }
@@ -73,7 +97,7 @@
       .content .treatments .treatments-row {
         grid-template-columns: auto auto auto auto;
       }
-      
+
       .content .reasons .reasons-row {
         justify-content: space-around;
       }
@@ -144,7 +168,7 @@
       }
 
       .content .treatments .treatments-row .treatments-box {
-        width: 880px;
+        width: auto;
         height: 520px;
         background-size: cover;
         background-repeat: no-repeat;
@@ -188,6 +212,31 @@
         grid-template-columns: auto auto;
       }
 
+      .content .reviews .reviews-row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .content .reviews-row .card .card-body p:nth-of-type(2) {
+        text-align: left;
+      }
+
+      .content .treatments-body-text h3 {
+        text-align: left;
+        margin-left: 10%;
+      }
+
+      .content .treatments-skin-text h3 {
+        text-align: right;
+        margin-right: 10%;
+      }
+
+      .content .card {
+        width: 75%;
+      }
+
       @media screen and (max-width: 992px) {
         #bg-image {
           height: 100%;
@@ -226,6 +275,33 @@
         }
         .content .treatments .treatments-row .treatments-skin-text {
           grid-area: 3 / 1 / 4 / 2;
+        }
+
+        .content .treatments-box {
+          max-width: 100%;
+          height: auto;
+        }
+
+        .content .reviews .reviews-row > div {
+          margin-bottom: 5%;
+        }
+
+        .content .treatments .treatments-row {
+          grid-template-areas: none;
+        }
+
+        .treatments-skin-text h3,
+        .treatments-body-text h3 {
+          text-align: left;
+          margin: 0;
+        }
+
+        .content .reviews .reviews-row {
+          flex-direction: column;
+        }
+
+        .content .reviews-row .card .card-body p:nth-of-type(2) {
+          text-align: center;
         }
       }
     </style>
@@ -360,7 +436,7 @@
 
     <section class="content">
       <div class="hero">
-        <div id="bg-blur"></div>
+        <!-- <div id="bg-blur"></div> -->
         <div class="hero-row">
           <div>
             <h1>Radiance Aesthetic</h1>
@@ -374,9 +450,11 @@
       <div class="about">
         <div class="about-row">
           <div>
-            <img src="https://moyemmedical.com/wp-content/uploads/2021/09/Face-Treatments-4-3-1536x1152.jpg" alt="women-portrait"
-            class="img-fluid" 
-            >
+            <img
+              src="https://moyemmedical.com/wp-content/uploads/2021/09/Face-Treatments-4-3-1536x1152.jpg"
+              alt="women-portrait"
+              class="img-fluid"
+            />
           </div>
           <div class="about-row-info">
             <h2>Welcome to Radiance Aesthetic</h2>
@@ -397,19 +475,19 @@
         <h2>Why choose us?</h2>
         <div class="reasons-row">
           <div class="reasons-box r1">
-            <div id="bg-blur"></div>
+            <!-- <div id="bg-blur"></div> -->
             <p>Professional team of doctors</p>
           </div>
           <div class="reasons-box r2">
-            <div id="bg-blur"></div>
+            <!-- <div id="bg-blur"></div> -->
             <p>Trusted and effective treatment</p>
           </div>
           <div class="reasons-box r3">
-            <div id="bg-blur"></div>
+            <!-- <div id="bg-blur"></div> -->
             <p>Excellent customer service</p>
           </div>
           <div class="reasons-box r4">
-            <div id="bg-blur"></div>
+            <!-- <div id="bg-blur"></div> -->
             <p>Transparent pricing plan</p>
           </div>
         </div>
@@ -428,27 +506,17 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="treatments-box t1">
-                    <div id="bg-blur"></div>
                     <p>Stretch Mark Removal Treatment</p>
                     <button name="t1">Read More</button>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="treatments-box t2">
-                    <div id="bg-blur"></div>
                     <p>Laser Hair Removal Treatment</p>
                     <button name="t2">Read More</button>
                   </div>
                 </div>
               </div>
-              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button> -->
             </div>
           </div>
           <div class="treatments-body-text">
@@ -466,14 +534,12 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="treatments-box t3">
-                    <div id="bg-blur"></div>
                     <p>Anti-Aging Treatment</p>
                     <button name="t3">Read More</button>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="treatments-box t4">
-                    <div id="bg-blur"></div>
                     <p>Acne Scar Removal Treatment</p>
                     <button name="t4">Read More</button>
                   </div>
@@ -490,13 +556,15 @@
             </div>
           </div>
         </div>
-        <button name="book">Book Now</button>
+        <div style="display: flex; justify-content: center">
+          <button name="book">Book Now</button>
+        </div>
       </div>
 
       <div class="reviews">
         <h2>Reviews</h2>
         <div class="reviews-row">
-          <div class="card" style="width: 500px">
+          <div class="card">
             <div class="card-body">
               <h3>Acne Scar Removal Treatment</h3>
               <p>22 June 2022</p>
@@ -506,7 +574,7 @@
               </p>
             </div>
           </div>
-          <div class="card" style="width: 500px">
+          <div class="card">
             <div class="card-body">
               <h3>Stretch Mark Removal</h3>
               <p>17 September 2022</p>

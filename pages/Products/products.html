@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
     <title>Radiance Aesthetic - Products</title>
-	 <style>
+    <style>
       .content {
         display: flex-vertical-align;
         justify-content: center;
@@ -24,15 +24,14 @@
         padding: 50px 0;
         /* background-color: #fff7ec; */
       }
-	
-	  
+
       .content .product-cards {
         display: grid;
         grid-template-columns: auto auto auto;
       }
-	  h3{
-	    margin-left: 75px;
-	  }
+      h3 {
+        margin-left: 75px;
+      }
 
       .content .product-card {
         width: 260px;
@@ -44,10 +43,9 @@
         align-items: center;
         text-align: center;
         margin: auto;
-		transition: transform .2s;
-		margin-bottom: 30px;
-		position: relative;
-
+        transition: transform 0.2s;
+        margin-bottom: 30px;
+        position: relative;
       }
 
       .content .product-card img {
@@ -55,17 +53,17 @@
         height: 290px;
         object-fit: cover;
       }
-	  
-	  .content .product-card:hover {
+
+      .content .product-card:hover {
         -ms-transform: scale(1.5); /* IE 9 */
         -webkit-transform: scale(1.5); /* Safari 3-8 */
-        transform: scale(1.05); 
-		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-     }
-	  .content .product-card .product-name {
+        transform: scale(1.05);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      }
+      .content .product-card .product-name {
         font-family: 'EB Garamond', sans-serif;
         font-size: 14px;
-		width: 200px;
+        width: 200px;
         color: #aba49d;
       }
 
@@ -73,16 +71,13 @@
         font-family: 'EB Garamond', sans-serif;
         font-size: 14px;
         color: #e69e6c;
-		width:200px;
-		transition: transform .2s;
+        width: 200px;
+        transition: transform 0.2s;
       }
 
       .content .product-card .product-content {
         margin: 10px 50px 10px 50px;
-		
-		
       }
-	  
 
       @media only screen and (max-width: 992px) {
         .content .blog-cards {
@@ -95,34 +90,33 @@
           grid-template-columns: auto;
         }
       }
-	  
-	  .text-block{
-  top: 0px;
-  left: 0px;
-  height: 20px;
-  background-color: red;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-  display: block;
-  position: absolute;
-}
-	  
-	  #myInput {
-  background-image: url('https://cdn-icons-png.flaticon.com/128/3106/3106797.png');
-  background-position: 95%; /* Position the search icon */
-  background-size: 20px 20px;
-  background-repeat: no-repeat; /* Do not repeat the icon image */
-  width: 30%;
-  font-size: 16px; /* Increase font-size */
-  padding: 12px 20px 12px 40px; /* Add some padding */
-  border: 1px solid #ddd; /* Add a grey border */
-  margin-left:65%; /* Add some space below the input */
-  margin-bottom: 0x;
-  display: flex;
-  flex-direction: column;
-  
-}
+
+      .text-block {
+        top: 0px;
+        left: 0px;
+        height: 20px;
+        background-color: red;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        display: block;
+        position: absolute;
+      }
+
+      #myInput {
+        background-image: url('https://cdn-icons-png.flaticon.com/128/3106/3106797.png');
+        background-position: 95%; /* Position the search icon */
+        background-size: 20px 20px;
+        background-repeat: no-repeat; /* Do not repeat the icon image */
+        width: 30%;
+        font-size: 16px; /* Increase font-size */
+        padding: 12px 20px 12px 40px; /* Add some padding */
+        border: 1px solid #ddd; /* Add a grey border */
+        margin-left: 65%; /* Add some space below the input */
+        margin-bottom: 0x;
+        display: flex;
+        flex-direction: column;
+      }
     </style>
   </head>
   <body>
@@ -224,382 +218,296 @@
         </div>
       </div>
     </nav>
-	
-	
-	
-	
-	
-	
-	
+
     <section class="content" id="content">
+      <input
+        type="text"
+        id="myInput"
+        onkeyup="searchFilter()"
+        placeholder="Search"
+      />
+      <p style="margin-top: -50px; margin-left: 5%; font-size: 10px">
+        *Sales last till end December 2022*
+      </p>
+      <p></p>
+      <div class="haircare">
+        <h3>Haircare</h3>
+        <br /><br /><br />
+        <div class="product-cards">
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://mistetic.com/wp-content/uploads/2020/01/Lador-Premium-Morocco-Argan-Oil.jpg"
+              alt="blog-img"
+            />
 
-	<input type="text" id="myInput" onkeyup="searchFilter()" placeholder="Search" >
-	 	<p style="margin-top: -50px; margin-left: 5%;font-size:10px;">*Sales last till end December 2022*<p>
-   <div class="haircare">
-  
-   <h3>Haircare</h3>
-   <br><br><br>
-      <div class="product-cards">
-	  
-	    <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://mistetic.com/wp-content/uploads/2020/01/Lador-Premium-Morocco-Argan-Oil.jpg"
-            alt="blog-img"
-          />
-		 
-          <div class="product-content">
-            <p class="product-name" name="pdt">Lador Premium Morrocco Argan Oil</p>
-            <p class="product-price">
-              $25.00
-            </p>
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Lador Premium Morrocco Argan Oil
+              </p>
+              <p class="product-price">$25.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		  <div class="text-block">
-             <p>20% off</p>
-           </div>
-		      <img class="w-100"
-            src="https://m.media-amazon.com/images/I/71QZul1UwjL.jpg"
-            alt="blog-img"
-          />
-		  
-          <div class="product-content">
-		  
-            <p class="product-name" name="pdt">Oliology Coconut Oil Hair Mask</p>
-            <p class="product-price">
-              $21.91
-            </p>
-          </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_815402024093-Ouai-Fine-To-Medium-Hair-Treatment-Masque-236-ml_9ebf0f31d2b4d4967da68859509e0ba4fb85a4f1_1608024161.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Ouai fine to medium hair treatment</p>
-            <p class="product-price">
-              $61.00
-            </p>
-          </div>
-		</div>
-		
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		  <div class="text-block">
-             <p>37% off</p>
-           </div>
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_8886482911070-Coco-Eve-Like-A-Virgin-Super-Hydrating-Cream-Conditioner-250ml_4b35f3706072171f1ee877ceba716534014b47ec_1633928911.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Coco & Eve like a virgin super hydrating cream conditioner</p>
-            <p class="product-price">
-              $37.00
-            </p>
-          </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_850018802468-Olaplex-No-4C-Bond-Maintenance-Clarifying-Shampoo-250ml_65f5bdcc6377c6eb7769ab96e64ded124a052a0b_1657539100.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Olaplex No. 4C bond maintenance clarifying shampoo</p>
-            <p class="product-price">
-              $50.00
-            </p>
-          </div>
-		</div>
-		
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_817023025244-VIRTUE-LABS-Curl-Leave-In-Butter-150ml_9f0b7e367beae98fd06ec8edfd1bb815f9490a3f_1647852136.png"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Virtue Labs curl leave-in butter</p>
-            <p class="product-price">
-              $63.00
-            </p>
-          </div>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	  </div>
-  
-  </div>
-  
-  
-  
-  
-  
-  <br><br><br><br><br><br>
-  <div class="bathandbody">
-   <h3>Bath & Body</h3>
-      <br><br><br>
-      <div class="product-cards">
-	  
-	    <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_3378878032049-Clinique-Moisture-Surge-Hydro-Infused-Lotion-and-Moisturizer-Skinc_43192cb9f8acaeea16beb215ca6b6308f67cd40a_1653459501.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Clinique moisture surge hydrating lotion</p>
-            <p class="product-price">
-              $65.00
-            </p>
-          </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		  <div class="text-block">
-             <p>25% off</p>
-           </div>
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_769915193657-The-Ordinary-Natural-Moisturizing-Factors-HA-100ml_187ab5543c23b011f3f1de77f085bfa0913c83f8_1639763402.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">The Ordinary natural moisturising factors</p>
-            <p class="product-price">
-              $20.00
-            </p>
-          </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_785364100589-Mario-Badescu-Coconut-Body-Scrub-170g_9fc741c0561ebf730ba726c885a72b72d54d6cb9_1664026421.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Mario Badescu cocount body scrub</p>
-            <p class="product-price">
-              $27.00
-            </p>
-          </div>
-		</div>
-		
 
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_3378872158912-Sephora-Collection-Exfoliating-Body-Granita-Scrub-Cotton-Flower_3e7112512b92d68acba4dfbba4693957134e1320_1625766894.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Ouai St Barts bath and body scrub</p>
-            <p class="product-price">
-              $61.00
-            </p>
+          <div class="product-card" class="bg-image hover-zoom">
+            <div class="text-block">
+              <p>20% off</p>
+            </div>
+            <img
+              class="w-100"
+              src="https://m.media-amazon.com/images/I/71QZul1UwjL.jpg"
+              alt="blog-img"
+            />
+
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Oliology Coconut Oil Hair Mask
+              </p>
+              <p class="product-price">$21.91</p>
+            </div>
           </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_2_Product_840026658232-Fenty-Beauty-Cocoa-CleansR-Soothing-All-Over-Cleansing-Bar-141-7g_25a42142906412c3e963e2134c2cd7d6c390b387_1658760084.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Fenty Skins cleansing bar</p>
-            <p class="product-price">
-              $21.00
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_815402024093-Ouai-Fine-To-Medium-Hair-Treatment-Masque-236-ml_9ebf0f31d2b4d4967da68859509e0ba4fb85a4f1_1608024161.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Ouai fine to medium hair treatment
+              </p>
+              <p class="product-price">$61.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_785364100015-Mario-Badescu-AHA-Botanical-Body-Soap_13eede96e07a922585165fa627f500924eb87ee8_1606297518.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Mario Badescu A.H.A botanical body soap</p>
-            <p class="product-price">
-              $17.00
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <div class="text-block">
+              <p>37% off</p>
+            </div>
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_8886482911070-Coco-Eve-Like-A-Virgin-Super-Hydrating-Cream-Conditioner-250ml_4b35f3706072171f1ee877ceba716534014b47ec_1633928911.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Coco & Eve like a virgin super hydrating cream conditioner
+              </p>
+              <p class="product-price">$37.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	  </div>
-  
-  </div>
-  
-  
-  
-    <br><br><br><br><br><br>
-  <div class="skincare">
-   <h3>Skincare</h3>
-      <br><br><br>
-      <div class="product-cards">
-	  
-	    <div class="product-card" class="bg-image hover-zoom">
-		 
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_809280155222-Fresh-Soy-Face-Cleanser-Limited-Edition-250ml_441c5a6a51675eafcadafbcaeaf0e987e4a48166_1644212051.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Soy face cleanser</p>
-            <p class="product-price">
-              $81.00
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_850018802468-Olaplex-No-4C-Bond-Maintenance-Clarifying-Shampoo-250ml_65f5bdcc6377c6eb7769ab96e64ded124a052a0b_1657539100.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Olaplex No. 4C bond maintenance clarifying shampoo
+              </p>
+              <p class="product-price">$50.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_4979006067965-SK-II-Facial-Treatment-Cleansing-Gel-80g_d5edf8f666300fd7372d57b94b16bc8b046d7665_1603785213.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">SK-II facial treatment cleansing gel</p>
-            <p class="product-price">
-              $73.00	
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_817023025244-VIRTUE-LABS-Curl-Leave-In-Butter-150ml_9f0b7e367beae98fd06ec8edfd1bb815f9490a3f_1647852136.png"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Virtue Labs curl leave-in butter
+              </p>
+              <p class="product-price">$63.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_208571-Shiseido-Benefiance-Wrinkle-Smoothing-Day-Emulsion-Default_d1410442bf617b75163ea47a245180f007cc92f9_1552640699.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Shiseido benefiance wrinkle smoothing day emulsion</p>
-            <p class="product-price">
-              $100.00
-            </p>
+        </div>
+      </div>
+
+      <br /><br /><br /><br /><br /><br />
+      <div class="bathandbody">
+        <h3>Bath & Body</h3>
+        <br /><br /><br />
+        <div class="product-cards">
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_3378878032049-Clinique-Moisture-Surge-Hydro-Infused-Lotion-and-Moisturizer-Skinc_43192cb9f8acaeea16beb215ca6b6308f67cd40a_1653459501.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Clinique moisture surge hydrating lotion
+              </p>
+              <p class="product-price">$65.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_4562248590058-Three-Balancing-UV-Protector-R-30ml_e3f3d754809ac95a81f75847cc2f707f8a5c3e91_1584930137.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Balancing UV protector r</p>
-            <p class="product-price">
-              $68.00
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <div class="text-block">
+              <p>25% off</p>
+            </div>
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_769915193657-The-Ordinary-Natural-Moisturizing-Factors-HA-100ml_187ab5543c23b011f3f1de77f085bfa0913c83f8_1639763402.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                The Ordinary natural moisturising factors
+              </p>
+              <p class="product-price">$20.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		 <div class="text-block">
-             <p>28% off</p>
-           </div>
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_3274872432185-Givenchy-Skin-Perfecto-Vitamin-Blend-Glow-Serum-30ml_320f6aa93c9d08a9b44e36fb83be06cc93a7685e_1646807393.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">Givenchy skin perfecto vitamin blend glow serum</p>
-            <p class="product-price">
-              $112.00
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_785364100589-Mario-Badescu-Coconut-Body-Scrub-170g_9fc741c0561ebf730ba726c885a72b72d54d6cb9_1664026421.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Mario Badescu cocount body scrub
+              </p>
+              <p class="product-price">$27.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		
-		 <div class="product-card" class="bg-image hover-zoom">
-		      <img class="w-100"
-            src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_769915194951-The-Ordinary-Niacinamide-10-Zinc-1-60ml_5214aac1742b280007dd2bca1259f62e6a6830be_1639763416.png"
-            alt="blog-img"
-          />
-          <div class="product-content">
-            <p class="product-name" name="pdt">The Ordinary niacinamide 10%</p>
-            <p class="product-price">
-              $23.00
-            </p>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_3378872158912-Sephora-Collection-Exfoliating-Body-Granita-Scrub-Cotton-Flower_3e7112512b92d68acba4dfbba4693957134e1320_1625766894.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Ouai St Barts bath and body scrub
+              </p>
+              <p class="product-price">$61.00</p>
+            </div>
           </div>
-		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	  </div>
-  
-  </div>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_2_Product_840026658232-Fenty-Beauty-Cocoa-CleansR-Soothing-All-Over-Cleansing-Bar-141-7g_25a42142906412c3e963e2134c2cd7d6c390b387_1658760084.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">Fenty Skins cleansing bar</p>
+              <p class="product-price">$21.00</p>
+            </div>
+          </div>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_785364100015-Mario-Badescu-AHA-Botanical-Body-Soap_13eede96e07a922585165fa627f500924eb87ee8_1606297518.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Mario Badescu A.H.A botanical body soap
+              </p>
+              <p class="product-price">$17.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br /><br /><br /><br /><br />
+      <div class="skincare">
+        <h3>Skincare</h3>
+        <br /><br /><br />
+        <div class="product-cards">
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_809280155222-Fresh-Soy-Face-Cleanser-Limited-Edition-250ml_441c5a6a51675eafcadafbcaeaf0e987e4a48166_1644212051.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">Soy face cleanser</p>
+              <p class="product-price">$81.00</p>
+            </div>
+          </div>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_4979006067965-SK-II-Facial-Treatment-Cleansing-Gel-80g_d5edf8f666300fd7372d57b94b16bc8b046d7665_1603785213.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                SK-II facial treatment cleansing gel
+              </p>
+              <p class="product-price">$73.00</p>
+            </div>
+          </div>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_208571-Shiseido-Benefiance-Wrinkle-Smoothing-Day-Emulsion-Default_d1410442bf617b75163ea47a245180f007cc92f9_1552640699.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Shiseido benefiance wrinkle smoothing day emulsion
+              </p>
+              <p class="product-price">$100.00</p>
+            </div>
+          </div>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_4562248590058-Three-Balancing-UV-Protector-R-30ml_e3f3d754809ac95a81f75847cc2f707f8a5c3e91_1584930137.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">Balancing UV protector r</p>
+              <p class="product-price">$68.00</p>
+            </div>
+          </div>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <div class="text-block">
+              <p>28% off</p>
+            </div>
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_3274872432185-Givenchy-Skin-Perfecto-Vitamin-Blend-Glow-Serum-30ml_320f6aa93c9d08a9b44e36fb83be06cc93a7685e_1646807393.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                Givenchy skin perfecto vitamin blend glow serum
+              </p>
+              <p class="product-price">$112.00</p>
+            </div>
+          </div>
+
+          <div class="product-card" class="bg-image hover-zoom">
+            <img
+              class="w-100"
+              src="https://image-optimizer-reg.production.sephora-asia.net/images/product_images/closeup_1_Product_769915194951-The-Ordinary-Niacinamide-10-Zinc-1-60ml_5214aac1742b280007dd2bca1259f62e6a6830be_1639763416.png"
+              alt="blog-img"
+            />
+            <div class="product-content">
+              <p class="product-name" name="pdt">
+                The Ordinary niacinamide 10%
+              </p>
+              <p class="product-price">$23.00</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -623,7 +531,7 @@
           <h4>Find out more</h4>
           <a href="../Blog/blog.html">Blog</a>
           <a href="../FAQ/faq.html">FAQ</a>
-          <a href="../PDPA/pdpa.html">Private Policy</a>
+          <a href="../PDPA/pdpa.html">Privacy Policy</a>
         </div>
         <div
           class="grid-item"
@@ -697,19 +605,18 @@
     crossorigin="anonymous"
   ></script>
   <script>
-  function searchFilter(){
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
- pdts = document.getElementsByName("pdt");
-for (var index=0; index< pdts.length; index++){
-txtValue = pdts[index].textContent || pdts[index].innerText;
-if (txtValue.toUpperCase().indexOf(filter) > -1){
-pdts[index].parentElement.parentElement.style.display = "";
-}
-else{
-pdts[index].parentElement.parentElement.style.display = "none";
-}
-}
-	}
+    function searchFilter() {
+      input = document.getElementById('myInput');
+      filter = input.value.toUpperCase();
+      pdts = document.getElementsByName('pdt');
+      for (var index = 0; index < pdts.length; index++) {
+        txtValue = pdts[index].textContent || pdts[index].innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          pdts[index].parentElement.parentElement.style.display = '';
+        } else {
+          pdts[index].parentElement.parentElement.style.display = 'none';
+        }
+      }
+    }
   </script>
 </html>

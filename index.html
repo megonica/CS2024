@@ -15,91 +15,182 @@
     <link rel="stylesheet" href="./global styles/footer.css" />
     <link rel="stylesheet" href="./global styles/content.css" />
     <link rel="stylesheet" href="./global styles/font.css" />
+    <link rel="stylesheet" href="./global styles/button.css" />
     <title>Radiance Aesthetic - Home</title>
     <style type="text/css">
-      @media (max-width: 800px) {
-        .flex-container {
-          flex-direction: column;
-        }
+      .content .hero .hero-row, 
+      .content .about .about-row, 
+      .content .reasons .reasons-row, 
+      .content .treatments .treatments-row, 
+      .content .reviews .reviews-row {
+        display: grid;
       }
-      .content {
-        display: flex;
-        flex-wrap: wrap;
+
+      .content .hero .hero-row > div, 
+      .content .about .about-row > div, 
+      .content .reasons .reasons-row > div, 
+      .content .treatments .treatments-row > div, 
+      .content .reviews .reviews-row > div {
+        margin: 5%;
       }
-      button {
-        background: #E69E6C;
-        color: #ffffff;
-        text-align: center;
+
+      .content .hero .hero-row > div {
+        padding-top: 100px;
+        padding-bottom: 100px;
       }
-      .h2-center {
-        display: flex;
-        justify-content: center;
-        width: 1280px;
+
+      .content .hero {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
       }
-      .hero {
-        display: flex;
-        width: 1280px;
-        height: 520px;
+
+      .content .hero .hero-row h1,
+      .content .hero .hero-row h2,
+      .content .reasons .reasons-row .reasons-box p {
+        color: rgb(235, 235, 235);
       }
-      .hero-left {
-        flex: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        border: 1px solid;
+
+      .content .about .about-row {
+        grid-template-columns: 40fr 60fr;
       }
-      .hero-right {
-        flex: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border: 1px solid;
+
+      .content .reasons .reasons-row,
+      .content .treatments .treatments-row {
+        grid-template-columns: auto auto auto auto;
       }
-      .hero-right img {
-        width: 520px;
-        height: 400px;
-        margin-right: 48px;
-        border: 1px solid;        
-      }
-      .about {
-        display: flex;
-        width: 1280px;
-        height: 520px;
-      }
-      .about-left {
-        flex: 40%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border: 1px solid;
-      }
-      .about-left img {
-        width: 520px;
-        height: 400px;
-        margin-left: 48px;
-        border: 1px solid;        
-      }
-      .about-right {
-        flex: 60%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        flex-direction: column;
-        border: 1px solid;
-      }
-      .reasons {
-        display: flex;
-        flex-wrap: wrap;
-        width: 1280px;
-        height: 466px;
-        justify-content: space-between;
-      }
-      .reasons-box {
-        text-align: center;
-        background: #D9D9D9;
+
+      .content .reasons .reasons-row .reasons-box {
         width: 240px;
         height: 240px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .r1 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1618498082410-b4aa22193b38?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+      }
+
+      .r2 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1598300188904-6287d52746ad?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+      }
+
+      .r3 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+      }
+
+      .r4 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1562564055-71e051d33c19?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+      }
+
+      .content .treatments .treatments-row {
+        grid-template-areas: 
+          'title title title title' 
+          'sub sub sub sub'
+          'body body body body-text'
+          'skin-text skin skin skin';
+      }
+
+      .treatments-body-img {grid-area: body;}
+      .treatments-body-text {grid-area: body-text;}
+      .treatments-skin-img {grid-area: skin;}
+      .treatments-skin-text {grid-area: skin-text;}
+
+      .content .treatments .treatments-row .treatments-box {
+        width: 880px;
+        height: 520px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .t1 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1573580711445-fb48e7af4528?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80');
+      }
+
+      .t2 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://images.unsplash.com/photo-1533228705496-072ca298b122?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+      }
+
+      .t3 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://moyemmedical.com/wp-content/uploads/2021/10/Genius-Lift-1-853x1024.jpg');
+      }
+
+      .t4 {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Ulthera-Youth-Revive-1-853x1024.jpg');
+      }
+      
+      .content .reviews .reviews-row {
+        grid-template-columns: auto auto;
+      } 
+
+
+      @media screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .hero .hero-row, 
+        .content .about .about-row, 
+        .content .treatments .treatments-row, 
+        .content .reviews .reviews-row {
+          grid-template-columns: auto;
+        }
+
+        .content .hero .hero-rows .hero-right-top { grid-area: 1 / 1 / 2 / 2; }
+        .content .hero .hero-rows .hero-left-bottom { grid-area: 2 / 1 / 3 / 2; }
+
+        .content .reasons .reasons-row {
+          grid-template-columns: auto auto;
+        }
+
+        .content .treatments .treatments-row .treatments-body-img {grid-area: 2 / 1 / 3 / 2;}
+        .content .treatments .treatments-row .treatments-body-text {grid-area: 1 / 1 / 2 / 2;}
+        .content .treatments .treatments-row .treatments-skin-img {grid-area: 4 / 1 / 5 / 2;}
+        .content .treatments .treatments-row .treatments-skin-text {grid-area: 3 / 1 / 4 / 2;}
+
+
       }
     </style>
   </head>
@@ -209,39 +300,146 @@
         </div>
       </div>
     </nav>
+
     <section class="content">
       <div class="hero">
-        <div class="hero-left">
-          <div class="hero-left-content">
+        <div id="bg-blur"></div>
+        <div class="hero-row">
+          <div>            
             <h1>Radiance Aesthetic</h1>
-            <h2>Your ideal aesthetic partner</h2>
-            <button>Book Now</button>            
+            <h2>Your ideal aesthetic partner</h2><br/>
+            <button name="book">Book Now</button>
+          </div>
+        </div>        
+      </div>
+
+      <div class="about">
+        <div class="about-row">
+          <div>
+            <img src="https://moyemmedical.com/wp-content/uploads/2021/09/Face-Treatments-4-3-1536x1152.jpg" alt="women-portrait"
+            style="width: 520px; height: 400px;" 
+            >
+          </div>
+          <div>
+            <h2>Welcome to Radiance Aesthetic</h2>
+            <p>
+              We believe that the personal pursuit of beauty should be experienced like a journey, or a friendship. We pride ourselves in taking care of you whole-heartedly and place importance in serving beauty with heart, while maintaining a high level of discreteness. Let us walk alongside you on your journey to self-improvement, so your beauty can shine through. 
+            </p>
+            <button name="about">About Us</button>
           </div>
         </div>
-        <div class="hero-right">
-          <img src="#">
-        </div>
       </div>
-      <div class="about">
-        <div class="about-left">
-          <img src="#">
-        </div>
-        <div class="about-right">
-          <h2>Welcome to Radiance Aesthetic</h2>
-          <p>
-            We believe that the personal pursuit of beauty should be experienced like a journey, or a friendship. We pride ourselves in taking care of you whole-heartedly and place importance in serving beauty with heart, while maintaining a high level of discreteness. Let us walk alongside you on your journey to self-improvement, so your beauty can shine through. 
-          </p>
-          <button>About Us</button>
-        </div>
-      </div>
+
       <div class="reasons">
-        <div class="h2-center">
-          <h2>Why choose us?</h2>
+        <h2>Why choose us?</h2>
+        <div class="reasons-row">
+          <div class="reasons-box r1">
+            <div id="bg-blur"></div>
+            <p>Professional team of doctors</p>
+          </div>
+          <div class="reasons-box r2">
+            <div id="bg-blur"></div>
+            <p>Trusted and effective treatment</p>
+          </div>
+          <div class="reasons-box r3">
+            <div id="bg-blur"></div>
+            <p>Highly appraised customer service</p>
+          </div>
+          <div class="reasons-box r4">
+            <div id="bg-blur"></div>
+            <p>Transparent pricing plan</p>
+          </div>
         </div>
-        <div class="reasons-box"><p>box 1</p></div>
-        <div class="reasons-box"><p>box 2</p></div>
-        <div class="reasons-box"><p>box 3</p></div>
-        <div class="reasons-box"><p>box 4</p></div>
+      </div>
+
+      <div class="treatments">
+        <h2>Treatments</h2>
+        <p>At Radiance Aesthetic, we provide treatments for body and skin.</p>
+        <div class="treatments-row">
+          <div class="treatments-body-img">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="treatments-box t1">
+                    <div id="bg-blur"></div>
+                    <p>Stretch Mark Removal Treatment</p>
+                    <button name="t1">Read More</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="treatments-box t2">
+                    <div id="bg-blur"></div>
+                    <p>Laser Hair Removal Treatment</p>
+                    <button name="t2">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+          <div class="treatments-body-text">
+            <h3>Featured<br>Body<br>Treatment</h3>
+          </div>
+          <div class="treatments-skin-text">
+            <h3>Featured<br>Skin<br>Treatment</h3>
+          </div>
+          <div class="treatments-skin-img">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="treatments-box t3">
+                    <div id="bg-blur"></div>
+                    <p>Anti-Aging Treatment</p>
+                    <button name="t3">Read More</button>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="treatments-box t4">
+                    <div id="bg-blur"></div>
+                    <p>Acne Scar Removal Treatment</p>
+                    <button name="t4">Read More</button>
+                  </div>
+                </div>
+              </div>
+              <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button> -->
+            </div>
+          </div>
+        </div>
+        <button name="book">Book Now</button>
+      </div>
+
+      <div class="reviews">
+        <h2>Reviews</h2>
+        <div class="reviews-row">
+          <div class="card" style="width: 500px;">
+            <div class="card-body">
+              <h3>Card title</h3>
+              <p>Card subtitle</p>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+          <div class="card" style="width: 500px;">
+            <div class="card-body">
+              <h3>Card title</h3>
+              <p>Card subtitle</p>
+              <p>Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
+        </div>          
       </div>
     </section>
 
@@ -339,4 +537,46 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"
   ></script>
+  <script>
+    document.querySelectorAll('button[name="book"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'pages/Contact/contact.html';
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('button[name="about"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'pages/About/About Us.html';
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('button[name="t1"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'pages/Treatment 1/treatment1.html';
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('button[name="t2"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'pages/Treatment 2/treatment2.html';
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('button[name="t3"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'pages/Treatment 3/treatment3.html';
+      });
+    });
+  </script>
+  <script>
+    document.querySelectorAll('button[name="t4"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = 'pages/Treatment 4/treatment4.html';
+      });
+    });
+  </script>
 </html>

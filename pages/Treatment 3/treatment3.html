@@ -15,7 +15,117 @@
     <link rel="stylesheet" href="../../global styles/footer.css" />
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
+    <link rel="stylesheet" href="../../global styles/button.css" />
     <title>Radiance Aesthetic - Diamond Polar</title>
+    <style>
+      .content th,
+      .content td,
+      .content ul {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        color: #aba49d;
+      }
+
+      .content table {
+        width: 100%;
+      }
+
+      .content th,
+      .content td {
+        border: 2px solid #aba49d;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .content .information {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://moyemmedical.com/wp-content/uploads/2021/10/Genius-Lift-1-853x1024.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .content .summary .summary-row,
+      .content .information .information-row,
+      .content .details-row {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .content .summary .summary-row > div,
+      .content .information .information-row > div,
+      .details {
+        margin: 5%;
+      }
+
+      .content .information .information-row h2,
+      .content .information .information-row p {
+        color: rgb(235, 235, 235);
+      }
+
+      .content .summary {
+        position: relative;
+      }
+
+      .content .information .information-row div:nth-of-type(1) {
+        margin-top: 30%;
+        padding-right: 60px;
+      }
+
+      .content .information .information-row div:nth-of-type(2) {
+        text-align: right;
+        padding-left: 60px;
+      }
+
+      .content .details-row {
+        column-gap: 10%;
+      }
+
+      .content .align-bottom button {
+        position: absolute;
+        bottom: 5%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .summary .summary-row,
+        .content .information .information-row {
+          grid-template-columns: auto;
+        }
+
+        .content .summary .summary-row > div {
+          margin: 5%;
+          margin-top: 0;
+        }
+
+        .content .information .information-row > div {
+          margin: 0 5% 0 5%;
+        }
+
+        .content .information .information-row div:nth-of-type(1) {
+          margin-top: 5%;
+          padding-right: 0;
+        }
+
+        .content .information .information-row div:nth-of-type(2) {
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5%;
+        }
+
+        .content .align-bottom button {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -112,8 +222,139 @@
         </div>
       </div>
     </nav>
+
     <section class="content">
-      <p>Place content here (to remove)</p>
+      <div class="summary">
+        <div class="summary-row">
+          <div>
+            <h1>Diamond Polar</h1>
+            <h3>Anti-Aging Treatment</h3>
+            <p>
+              The Diamond Polar treatment is an anti-aging solution for all ages. 
+              It helps slow down the ageing process, effectively diminishing lines 
+              and wrinkles, whilst protecting your skin. 
+            </p>
+            <p>
+              The Diamond Polar applicator uses a combination of Multi-Polar Radio 
+              Frequency (RF) and Pulsed Electro-Magnetic Fields (PEMF) to produce 
+              uniform heat under the skin’s surface. It’s a quick and easy procedure 
+              that gives an immediate lift with no downtime. The heat generated 
+              provides an afterglow, which makes it an ideal treatment to have before 
+              an important event or a big night out, as you’d look radiant and refreshed.
+            </p>
+            <div class="align-bottom">
+              <button name="book">BOOK NOW</button>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img-fluid"
+              src="https://moyemmedical.com/wp-content/uploads/2021/10/Genius-Lift-1-853x1024.jpg"
+              alt="profile"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div id="bg-blur"></div>
+        <div class="information-row">
+          <div>
+            <h2>
+              What is the<br />
+              Diamond Polar treatment?
+            </h2>
+            <p>
+              Ageing is a natural process which causes our skin to lose clarity, 
+              strength, elasticity and become thinner. As we age, fine lines 
+              appear, wrinkles, small veins surface and brown spots develop on the 
+              skin. Inefficiency in shedding old, dead skin cells results in 
+              enlarged, visible pores, rough skin, and irregular rough skin texture. 
+            </p>
+            <p>
+              The Diamond Polar treatment is ideal for both younger and older 
+              patients. It maintains the skin and provides a more defined contour 
+              for the young, and treats lines and elasticity for older patients.
+            </p>
+          </div>
+          <div>
+            <h2>How does<br />it work?</h2>
+            <p>
+              In the right hands, this treatment is comfortable and feels like a 
+              hot stone massage. It’s a quick and easy procedure that gives an 
+              immediate lift with no downtime. Visible results can be seen in just 
+              one session. However, it is recommended to complete multiple 
+              treatments to achieve more optimal results and continued improvements.
+            </p>
+            <h2>Why choose<br />Diamond Polar?</h2>
+            <p>
+              With the Diamond Polar treatment, you can expect immediate rejuvenation 
+              of the skin and enhanced skin tone. Say goodbye to surgery, anaesthesia, 
+              pain, and hospital stay. Restore hydrobalance and improve skin 
+              elasticity and firmness. It providse overall skin hydration and 
+              radiance for younger looking skin.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-row">
+          <div>
+            <h2>Candidates for treatment</h2>
+          </div>
+          <div>
+            <p>
+              The Diamond Polar treatment is recommended for those who experience: 
+            </p>
+            <ul>
+              <li>Slowdown in cell renewal</li>
+              <li>Premature aging</li>
+              <li>Fine lines and wrinkles</li>
+            </ul>
+            <p>
+              It empowers fatigued, damaged or sensitive complexions to bounce 
+              back to skin that’s stronger, more responsive to treatment, and 
+              visibly soothed and hydrated.
+            </p>
+          </div>
+          <div>
+            <h2>Pricing plan</h2>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <th>Session(s)</th>
+                <th>Pricing plan</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Single session</td>
+                  <td>$298</td>
+                </tr>
+                <tr>
+                  <td>3 sessions</td>
+                  <td>$799</td>
+                </tr>
+                <tr>
+                  <td>6 sessions</td>
+                  <td>$1,499</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Recommended Session: 3 - 6 sessions<br />Recommended
+                    Intervals: 6 - 12 months<br />Recovery Time: Same day 
+                    recovery with zero downtime, zero pain
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+            <p>
+              Book an appointment today for a professional consultation with our
+              team of doctors to find out what suits you best.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -194,7 +435,7 @@
           <p
             style="text-align: center; color: white; font-size: 12px; margin: 0"
           >
-            Radiance Aesthetic 2022 (C) All rights reserved
+            Radiance Aesthetic 2022 &copy All rights reserved
           </p>
         </div>
       </div>
@@ -210,4 +451,11 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"
   ></script>
+  <script>
+    document.querySelectorAll('button[name="book"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = '../Contact/contact.html';
+      });
+    });
+  </script>
 </html>

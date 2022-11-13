@@ -22,3 +22,118 @@ button[name='book']:hover {
   border: 2px solid #e69e6c;
   text-align: center;
 }
+
+button[name='about'] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+button[name='about']:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+}
+
+button[name='t1'] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+button[name='t1']:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+}
+
+button[name='t2'] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+button[name='t2']:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+}
+
+button[name='t3'] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+button[name='t3']:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+}
+
+button[name='t4'] {
+  all: unset;
+  font-family: 'Lexend', sans-serif;
+  background-color: #e69e6c;
+  height: 45px;
+  width: 150px;
+  color: white;
+  text-align: center;
+}
+
+button[name='t4']:hover {
+  all: unset;
+  cursor: pointer;
+  transition: 0.5s;
+  font-family: 'Lexend', sans-serif;
+  background-color: white;
+  height: 41px;
+  width: 146px;
+  color: #e69e6c;
+  border: 2px solid #e69e6c;
+  text-align: center;
+}

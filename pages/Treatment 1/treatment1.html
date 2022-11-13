@@ -15,7 +15,117 @@
     <link rel="stylesheet" href="../../global styles/footer.css" />
     <link rel="stylesheet" href="../../global styles/content.css" />
     <link rel="stylesheet" href="../../global styles/font.css" />
-    <title>Radiance Aesthetic - Morpheus 8</title>
+    <link rel="stylesheet" href="../../global styles/button.css" />
+    <title>Radiance Aesthetic - Fractional CO2 Laser</title>
+    <style>
+      .content th,
+      .content td,
+      .content ul {
+        font-family: 'Lexend', sans-serif;
+        font-size: 14px;
+        color: #aba49d;
+      }
+
+      .content table {
+        width: 100%;
+      }
+
+      .content th,
+      .content td {
+        border: 2px solid #aba49d;
+        text-align: center;
+        padding: 2%;
+      }
+
+      .content .information {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+          ),
+          url('https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Stretch-Mark-Repair.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        backdrop-filter: blur(10px);
+      }
+
+      .content .summary .summary-row,
+      .content .information .information-row,
+      .content .details-row {
+        display: grid;
+        grid-template-columns: auto auto;
+      }
+
+      .content .summary .summary-row > div,
+      .content .information .information-row > div,
+      .details {
+        margin: 5%;
+      }
+
+      .content .information .information-row h2,
+      .content .information .information-row p {
+        color: rgb(235, 235, 235);
+      }
+
+      .content .summary {
+        position: relative;
+      }
+
+      .content .information .information-row div:nth-of-type(1) {
+        margin-top: 30%;
+        padding-right: 60px;
+      }
+
+      .content .information .information-row div:nth-of-type(2) {
+        text-align: right;
+        padding-left: 60px;
+      }
+
+      .content .details-row {
+        column-gap: 10%;
+      }
+
+      .content .align-bottom button {
+        position: absolute;
+        bottom: 5%;
+      }
+
+      @media only screen and (max-width: 992px) {
+        #bg-image {
+          height: 100%;
+        }
+
+        .content .summary .summary-row,
+        .content .information .information-row {
+          grid-template-columns: auto;
+        }
+
+        .content .summary .summary-row > div {
+          margin: 5%;
+          margin-top: 0;
+        }
+
+        .content .information .information-row > div {
+          margin: 0 5% 0 5%;
+        }
+
+        .content .information .information-row div:nth-of-type(1) {
+          margin-top: 5%;
+          padding-right: 0;
+        }
+
+        .content .information .information-row div:nth-of-type(2) {
+          text-align: left;
+          padding: 0;
+          margin-bottom: 5%;
+        }
+
+        .content .align-bottom button {
+          position: relative;
+          bottom: 0;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg">
@@ -39,34 +149,12 @@
             <li class="nav-item">
               <a class="nav-link" href="../../index.html">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                About
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="../About/About Us.html"
-                    >About Us</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="../Doctor/doctor.html"
-                    >Our Doctor</a
-                  >
-                </li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="../About/About Us.html">About</a>
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link active"
-                aria-current="page"
+                class="nav-link"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -90,7 +178,8 @@
             </li>
             <li class="nav-item dropdown">
               <a
-                class="nav-link"
+                class="nav-link active"
+                aria-current="page"
                 href="#"
                 id="navbarDropdown"
                 role="button"
@@ -133,8 +222,115 @@
         </div>
       </div>
     </nav>
+
     <section class="content">
-      <p>Place content here (to remove)</p>
+      <div class="summary">
+        <div class="summary-row">
+          <div>
+            <h1>Morpheus8</h1>
+            <h3>Stretch-mark removal treatment</h3>
+            <p>
+              Stretch marks are common among women who have undergone pregnancy (especially during the last trimester), experienced rapid weight gain/loss or have a family history of stretch marks. While it poses no health risks, it is a cosmetic concern for many, which can affect self  esteem. Morpheus 8 - a non-surgical, painless treatment - is a viable option for many women who want to experience long-lasting, fresh and youthful skin. It essentially uses microneedling technology that emits radiofrequency energy to create tiny injuries for the skin to repair itself. .
+            </p>
+            <div class="align-bottom">
+              <button name="book">BOOK NOW</button>
+            </div>
+          </div>
+          <div>
+            <img
+              class="img-fluid"
+              src="https://moyemmedical.com/wp-content/uploads/2021/07/M-_-Stretch-Mark-Repair.jpg"
+              alt="profile"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="information">
+        <div id="bg-blur"></div>
+        <div class="information-row">
+          <div>
+            <h2>
+              What is the<br />
+              Morpheus 8? treatment?
+            </h2>
+            <p>
+            Morpheus 8 is a microneedling treatment that assists in generating collagen by penetrating the middle layers of the skin with radiofrequency energy.
+			It leverages on the Burst Technology which delivers bipolar radiofrrequency energy at three different levels within the skin layers to remodel them 
+			within a single cycle, which reduces the treatment time needed. It is also the only Food and Drug Administration (FDA) authorised treatment that allows
+			a penetration of 8mm deep within the adipose layer of the skin, to deeply nourish the skin and solve the problem of stretch marks from its roots. 
+			It is a non-surgical, painless method to treat stretch marks, making it a good option for stretch mark removal.
+            </p>
+          </div>
+          <div>
+            <h2>How does<br />it work?</h2>
+            <p>
+             Morpheus 8 is a mircroneedling treatment that penetrates into skin wth radiofrequency energy.
+			 An advanced derma roller device is used to create tiny injuries in the skin,
+			 which triggers a wound healing process that smoothens the textured stretch marks.
+			 Parts of the body where this treatment can be done: face, neck, stomach, upper arms, thighs,
+			 buttocks, bra rolls, under the chin, under the eyes and breasts. 
+            </p>
+        
+            <h2>Why choose<br />Morpheus 8?</h2>
+            <p>
+              Morpheus 8 is a non-surgical method to remove stretch marks, making it a tempting option for many.
+			  Together with removal of stretch marks, customers can enjoy other benefits such as tightening and
+			  lightening of the skin, removal of acne scars as well as pimples and wrinkes. The effects of the 
+			  treatment can be seen within 3-4 days of taking the treatment. The results continue to improve over
+			  the course of the year with the production of new collagen
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <div class="details-row">
+          <div>
+            <h2>Candidates for treatment</h2>
+          </div>
+          <div>
+            <p>
+       The Morpheus 8  treatment is recommended for any women who experience stretch marks, be it young or old. However, candidates below 18 are not allowed to take this treatment and candidates below 21 years old require parental consent. Women who have more active skin infections, are pregnant or breastfeeding should delay taking the Morpheus 8 treatment till they have consulted a doctor.
+            </p>
+          </div>
+          <div>
+            <h2>Pricing plan</h2>
+          </div>
+          <div>
+            <table>
+              <thead>
+                <th>Session(s)</th>
+                <th>Pricing plan</th>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Single session</td>
+                  <td>$900-$1200 (starting price)</td>
+                </tr>
+                <tr>
+                  <td>3 sessions</td>
+                  <td>$3000</td>
+                </tr>
+                <tr>
+                  <td>6 sessions</td>
+                  <td>$7000</td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    Recommended Session: 4 - 6 sessions<br />Recommended
+                    Intervals: 3 - 6 months<br />Recovery Time: 2 weeks
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <br />
+			<p>*Note: The prices listed above are for reference only. The cost may vary depending on which parts of the body requires treatment. Further details about prices will be discussed after doctor consultation.</p>
+            <p>
+              Book an appointment today for a professional consultation with our
+              team of doctors to find out what suits you best.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <footer>
@@ -231,4 +427,11 @@
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"
   ></script>
+  <script>
+    document.querySelectorAll('button[name="book"]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        window.location.href = '../Contact/contact.html';
+      });
+    });
+  </script>
 </html>
